@@ -1,0 +1,158 @@
+/************** @CSS Tabs内容标签页***************/
+
+/* apply styles to our content tabs; align the labels side by side, giving them a 33.333% width, since we have 3 tabs. If you have more, you can change this value. For example if you have four tabs, you can use 25% and so on. For the content area, apply a small css animation to make it pop when the content of the tab is changed, giving the new content some more attention. Also, hide the radio buttons by default, since we use the labels as the “clickable” area.*/
+.tabs {
+    position: relative;
+    width: 100%;
+}
+
+/* make sure no content after .tabs div and style:*/
+.tabs:after {
+    content: '';
+    display: table; /*the element behave like  <table> HTML elements. It defines a block-level box.*/
+    clear: both; /*no floating elements allowed on both sides */
+}
+
+.tabs input[type=radio] {
+    display:none;
+}
+
+.tabs label {
+    display: block;
+    float: left;
+    width: 25%;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer; /* cursor shown as a pointer (hand) */
+
+    /* add animation to label display*/
+    -moz-transition:all 0.5s;
+    -o-transition:all 0.5s;
+    -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+    transition: all 0.5s;
+    background: #fff;
+}
+
+
+.tabs label p {
+  font-weight: bold;
+}
+
+
+/* when hover over label, style different background and font color for label*/
+.tabs label:hover {
+    border-bottom: 1px solid #366b82;
+}
+
+
+/* style content div for all tabs*/
+.tab-content {
+    position: relative;
+    display: none; /* no show first*/
+    float: left;
+    width: 100%; /* same width as .tab div */
+    padding: 3% 5%;
+    /*border: 1px solid;*/
+}
+
+
+/* The Mechanics
+To make our tabs function we need to add a little bit more CSS. First we give the active label a different style by using the :checked + label. This will change the style of the label that is attached to the checkbox that is checked. If… that makes any sense.
+
+Then, we check which checkbox is checked, and display the content with that is attached to it using the IDs we specified above. ( #tab1:checked ~ #tab-content1 ) This will display the content box with the ID of “tab-content1” if the checkbox with the ID of “tab1” is checked.*/
+
+.tabs [id^="tab"]:checked + label {
+    background-color: rgb(236, 109, 27);
+}
+
+.tabs [id^="tab"]:checked + label h2 {
+    color: #ffffff;
+}
+
+#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3,
+#tab4:checked ~ #tab-content4  {
+    display: block; /* when checked, show tab-content per id*/
+}
+
+/************** @ End ***************/
+
+
+
+/************** @ 可排序数据表格（专业人员搜索结果列表） ***************/
+
+/* @group Data Tables */
+
+.ws_data_table {
+  width: 100%;
+  margin: 3rem auto;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #366b82;
+}
+
+.ws_data_table caption {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.ws_data_table th,
+.ws_data_table td {
+  white-space: nowrap;
+
+}
+
+
+.ws_data_table th {
+  height: 4rem;
+  text-transform: inherit;
+  background-color: #366b82;
+  color: white;
+  padding: 2px 10px 2px 10px;
+  border-right: #FFFFFF;
+  border-width: 1px;
+  border-style: none dotted none none;
+}
+
+.ws_data_table td {
+  height: 7.5rem;
+  width: 25%;
+  padding: 5px 10px 5px 10px;
+  vertical-align: middle;
+}
+
+.ws_data_table tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+.ws_data_table tr:nth-child(even) {
+  background-color: #E6E6E6;
+}
+
+/* @end */
+
+/* @group tablesorter */
+
+.header {
+  cursor: pointer;
+}
+
+.headerSortDown:after {
+  content: " ▾";
+  font-family: Arial, sans-serif;
+}
+
+.headerSortUp:after {
+  content: " ▴";
+  font-family: Arial, sans-serif;
+}
+
+/* @end */
+
+
+
+
+/************** @ End ***************/
