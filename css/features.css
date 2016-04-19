@@ -102,7 +102,6 @@ Then, we check which checkbox is checked, and display the content with that is a
 .ws_data_table th,
 .ws_data_table td {
   white-space: nowrap;
-
 }
 
 

@@ -466,8 +466,8 @@
     padding: 40px 0;
   }
 
-  .logo { width: 5%; }
-  .sub { width: 95%;  }
+  header .logo { width: 25%; text-align: right; margin-right: 4.5rem; }
+  .sub { width: 95%;}
 
   .sub {
     display: flex;
@@ -475,13 +475,12 @@
     align-items: flex-end;
   }
 
-  .sub .name { width: 55%; margin-right: 1.5rem;}
-  .sub .search { width: 40%; }
+  .sub .name { width: 58%; margin-right: 1.5rem;}
+  .sub .search { width: 38%; }
 
   .logo img{
     max-height: 110px;
     max-width: 110px;
-
   }
 
   .name * {
