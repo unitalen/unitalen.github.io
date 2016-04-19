@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitalen Website</title>
+  <meta name="description" content="Unitalen is one of the largest IP law firms in China with headquarter in Beijing. Each year our firm files more than 8,000 new patent applications and over 15,000 new trademark applications with the Patent and Trademark Offices of SIPO P.R.China, plus numerous foreign patent applications and trademark registration overseas.">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/features.css" />
+  <link rel="stylesheet" href="css/media.css" />
+
+</head>
+
+<body>
+    <div class="top">
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <figcaption>MENU</figcaption>
+      </div>
+      <div class="lang-btn" id="lang-btn">
+        <img src="images/language.png" alt="select language" />
+      </div>
+      <div class="languages group"> <!-- website languages -->
+        <ul class="no-bullet paddingleft">
+          <li><a href="#">中文</a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">日本语</a></li>
+          <li><a href="#">韩文</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="container flexbox"> <!-- header -->
+      <div class="logo"> <!-- company logo and name -->
+        <img src="images/logo.png" alt="unitalen logo"/>
+      </div>
+      <div class="sub">
+        <div class="name col">
+          <h1><span class="bigger">北京集佳知识产权</span><br /> Unitalen Attorneys at Law </h1>
+          <h2>中国大型知识产权代理机构和律师事务所 </h2>
+        </div>
+        <div class="search col">  <!-- search bar -->
+           <form>
+             <input class="textinput" type="text" name="searchbox" placeholder=" 搜索本站 ...">
+             <a href="#"><img src="images/search.png" alt="search icon" /></a>
+           </form>
+         </div>
+      </div>
+    </header>
+
+
+    <div class="nav"> <!-- Navigation Bar -->
+        <a class="close-btn" href="javascript:void(0)"><img src="images/close-menu.png" alt="close menu"/></a>
+        <ul class="no-bullet">
+            <li class="selected"><a href="index.html" >首页</a></li>
+            <li>
+              <span class="submenu_label">关于我们</span>
+              <ul class="sub_menu no-bullet">
+                <li><a href="about.html">集佳简介</a></li>
+                <li><a href="#">集佳服务</a></li>
+                <li><a href="#">荣誉与排名</a></li>
+                <li><a href="offices.html">分公司网络</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="submenu_label">业务领域</span>
+              <ul class="sub_menu no-bullet">
+                <li><a href="#">商标</a></li>
+                <li><a href="#">专利</a></li>
+                <li><a href="#">版权</a></li>
+                <li><a href="#">许可与转让</a></li>
+                <li><a href="#">仲裁与诉讼</a></li>
+                <li><a href="#">反不正当竞争</a></li>
+                <li><a href="#">国际贸易</a></li>
+                <li><a href="#">公司法</a></li>
+              </ul>
+          </li>
+          <li><a href="professionals.html">法律人员</a></li>
+          <li>
+            <span class="submenu_label">新闻与文章</span>
+              <ul class="sub_menu no-bullet">
+                <li><a href="news.html">最新新闻</a></li>
+                <li><a href="#">法律文章</a></li>
+                <li><a href="#">法律更新</a></li>
+                <li><a href="#">成功案例</a></li>
+                <li><a href="#">集佳活动</a></li>
+              </ul>
+          </li>
+          <li><a href="#">联系我们</a></li>
+      </ul>
+    </div>
+
+
+    <main class="in-div search-result">
+      <div> <!-- 此部分作为absolutepos部分的独立的parent，消除absolute position塌陷-->
+        <div class="on-top absolutepos">
+          <a href="professionals.html"><   返回搜索页面 </a>
+        </div>
+      </div>
+
+      <div class="result">
+          <h1>搜索结果</h1>
+          <h2><span>9</span>名相关人员</h2>
+          <ul class="flexbox-3 no-bullet result-info">
+              <li>商标&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img class="delete-btn" src="images\close-menu.png" alt="删除查询条件" /></a></li>
+              <li>版权&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img class="delete-btn" src="images\close-menu.png" alt="删除查询条件" /></a></li>
+              <li>北京&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img class="delete-btn" src="images\close-menu.png" alt="删除查询条件" /></a></li>
+              <li>美国&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img class="delete-btn" src="images\close-menu.png" alt="删除查询条件" /></a></li>
+              <li>合伙人&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img class="delete-btn" src="images\close-menu.png" alt="删除查询条件" /></a></li>
+              <li>高级合伙人&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img class="delete-btn" src="images\close-menu.png" alt="删除查询条件" /></a></li>
+          </ul>
+          <div>
+
+            <script>
+              $(document).ready(function()    {
+                  $("table").tablesorter({
+                    sortList: [[0,0]],
+                    headers: {3:{sorter:false}}
+                  });
+                }
+              );
+            </script>
+
+
+            <table class="tablesorter ws_data_table">
+              <thead>
+                <tr>
+                  <th>姓名</th> <!-- 以姓氏的首字母来排序： 此列英文数据显示为：Chen, Dan; 中文显示为：陈丹 -->
+                  <th>所在地</th> <!-- 英文以首个英文单词的首字母排序，中文以首个中文字的拼音首字母排序 -->
+                  <th>头衔</th> <!-- 英文以首个英文单词的首字母排序，中文以首个中文字的拼音首字母排序 -->
+                  <th>联系邮件</th> <!-- 不需要排序 -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="dan.html">陈丹</a></td>
+                  <td>美国</td>
+                  <td>高级合伙人</td>
+                  <td>dan.chen@unitalen.com</td>
+                </tr>
+                <tr>
+                  <td><a href="dan.html">何英韬</a></td>
+                  <td>北京</td>
+                  <td>高级合伙人</td>
+                  <td>dan.chen@unitalen.com</td>
+                </tr>
+                <tr>
+                  <td><a href="#">赵雷</a></td>
+                  <td>北京</td>
+                  <td>合伙人</td>
+                  <td>dan.chen@unitalen.com</td>
+                </tr>
+                <tr>
+                  <td><a href="#">周新艳</a></td>
+                  <td>北京</td>
+                  <td>合伙人</td>
+                  <td>dan.chen@unitalen.com</td>
+                </tr>
+                <tr>
+                  <td><a href="#">魏炜</a></td>
+                  <td>北京</td>
+                  <td>合伙人</td>
+                  <td>dan.chen@unitalen.com</td>
+                </tr>
+                <tr>
+                  <td><a href="#">朱国栋</a></td>
+                  <td>北京</td>
+                  <td>合伙人</td>
+                  <td>dan.chen@unitalen.com</td>
+                </tr>
+                <tr>
+                  <td><a href="#">张海鼎</a></td>
+                  <td>北京</td>
+                  <td>合伙人</td>
+                  <td>dan.chen@unitalen.com</td>
+                </tr>
+                <tr>
+                  <td><a href="#">张长江</a></td>
+                  <td>北京</td>
+                  <td>合伙人</td>
+                  <td>dan.chen@unitalen.com</td>
+                </tr>
+                <tr>
+                  <td><a href="#">秦丽丽</a></td>
+                  <td>北京</td>
+                  <td>合伙人</td>
+                  <td>dan.chen@unitalen.com</td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+      </div>
+    </main>
+
+
+
+
+    <footer class="flexbox">
+        <div class="signup col">
+          <h1><span class="boldtext">公司总部</span></h1>
+          <p>中国北京市建国门外大街22号<br />
+            赛特广场七、八、十一层  <br />
+            邮编：100004 <br/>
+            总部电话：(8610)59208888 <br />
+            电子邮箱：mail@unitalen.com
+          </p>
+        </div>
+
+        <div class="signup col">
+          <h1><span class="boldtext">邮件新闻接收</span></h1>
+          <p>不要错过我们提供的大中国区最新知识产权保护的相关信息、服务和活动通知。</p>
+          <form>
+            <input class="textinput" type="email" name="email" placeholder=" 请输入您的邮箱地址"/>
+            <input class="button" type="submit" id="emailsubmit" placeholder="按此提交" />
+          </form>
+          <p>提交将接收我们特别的服务优惠和最新知识产权保护咨询的电子邮件。</p>
+          </a>
+        </div>
+
+        <div class="social col">
+          <h1><span class="boldtext">社交网络联入</span></h1>
+          <div class="icons">
+            <img id="weChat" src="images/WeChat-Icon.png" alt="WeChat Icon" />
+            <img id="LinkedIn" src="images\2000px-Linkedin_icon.svg.png" alt="LinkedIn Icon" />
+          </div>
+        </div>
+    </footer>
+
+
+    <div class="bottom flexbox">
+      <span class="col">&copy;2016 Unitalen Attorneys at Law </span>
+      <a href="#">网站地图 </a>
+      <a href="#">法律声明 </a>
+    </div>
+
+
+    <script>
+      /* show menu after clicking hamburger icon */
+      var hamburger = document.querySelector('#hamburger');
+      var closebtn = document.querySelector('.close-btn');
+      var navigation = document.querySelector('.nav');
+
+      hamburger.addEventListener('click', function(e) {
+        navigation.classList.toggle('open');
+        e.stopPropagation();
+      });
+
+      closebtn.addEventListener('click', function() {
+        navigation.classList.remove('open');
+      });
+
+      $(".absolutepos").each(function() {
+        $(this).parent().css("height",$(this).height());
+      });
+
+
+
+
+    </script>
+
+</body>
