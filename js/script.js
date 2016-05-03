@@ -292,7 +292,7 @@ var markersData = [
      url: "http://www.unitalen.com/tokyo"
     },
     {
-      name: "美国加州",
+      name: "美国旧金山",
       address1: "5674 STONERIDGE DRIVE, SUITE 100",
       address2: "PLEASANTON, CA",
       postcode: "94588",
