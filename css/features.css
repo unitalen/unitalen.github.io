@@ -42,7 +42,7 @@
 
 /* when hover over label, style different background and font color for label*/
 .tabs label:hover {
-    border-bottom: 1px solid #366b82;
+    background: orange;
 }
 
 
@@ -63,7 +63,9 @@ To make our tabs function we need to add a little bit more CSS. First we give th
 Then, we check which checkbox is checked, and display the content with that is attached to it using the IDs we specified above. ( #tab1:checked ~ #tab-content1 ) This will display the content box with the ID of “tab-content1” if the checkbox with the ID of “tab1” is checked.*/
 
 .tabs [id^="tab"]:checked + label {
-    background-color: rgb(236, 109, 27);
+    background-color: #0B4E98;
+    border-bottom: 3px solid orange;
+    color: white;
 }
 
 .tabs [id^="tab"]:checked + label h2 {
@@ -108,7 +110,7 @@ Then, we check which checkbox is checked, and display the content with that is a
 .ws_data_table th {
   height: 4rem;
   text-transform: inherit;
-  background-color: #366b82;
+  background-color: #0B4E98;
   color: white;
   padding: 2px 10px 2px 10px;
   border-right: #FFFFFF;

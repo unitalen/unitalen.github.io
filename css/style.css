@@ -7,6 +7,10 @@
         1.   所有页面 - 基本元素和结构
 ************************************************/
 /*++++++++++ 页面基本元素  +++++++++++*/
+/* 基本蓝色使用：
+ 深色：#0B4E98 或者 rgb(11,78,152)
+ 浅色：#3285C7
+ */
 
 /*=== HTML元素 ====*/
 html { font-size: 62.5%; }
@@ -47,7 +51,7 @@ a {
 }
 
 a:hover {
-  color: #366b82;
+  color: #0B4E98;
 }
 
 figcaption {
@@ -55,7 +59,7 @@ figcaption {
 }
 
 input[type="submit"] {
-  background: #366b82;
+  background: #0B4E98;
   color: white;
   border-style: none;
 }
@@ -119,12 +123,15 @@ main {
 .top,
 .branch-top {
   position: relative;
-  min-height: 80px;
+  min-height: 100px;
+  background: #3285C7;
+  margin-bottom: 3.5rem;
 }
 
 .home-btn,
 .hamburger,
 .lang-btn,
+.search-btn,
 .branch-top .logo {
   position: absolute;
   top: 1em;
@@ -135,7 +142,8 @@ main {
 }
 
 .home-btn,
-.lang-btn {
+.lang-btn,
+.search-btn {
   border: 5px solid black;
 }
 
@@ -154,7 +162,7 @@ main {
   z-index: 99;
 }
 
-.top .home-btn {
+.top .search-btn {
   right: 11em;
 }
 
@@ -193,14 +201,15 @@ main {
 
 header,
 .branch-header {
-  background: radial-gradient(rgb(191, 237, 234), rgb(143, 217, 219),  rgb(38, 122, 158)); /* rgb(143, 217, 219),  rgb(38, 122, 158)*/
-  padding: 15px;
+  background:
+  padding: 5px;
 }
 
 /*=== LOGO和公司名字 ===*/
-.logo,
-.name {
-  width: 100%;
+.logo img {
+  width: 50%;
+  margin: auto;
+  max-width: 150px;
 }
 
 .name {
@@ -215,11 +224,6 @@ header,
   font-weight: 200;
 }
 
-.logo img {
-  width: 50%;
-  max-width: 150px;
-
-}
 
 /*=== 搜索内容条 （仅显示在 min-width: 680px）===*/
 .search form {
@@ -230,7 +234,8 @@ header,
 .search form input {
   width: 100%;
   text-align: center;
-  border: 1px solid rgb(40, 43, 34);
+  border: 3px solid orange;
+  border-radius: 25px;
 }
 
 .search form input,
@@ -250,11 +255,12 @@ header,
 /*+++++++++++++++++++ 页面浏览导航 ++++++++++++++++++++*/
 .nav {
   display: block;
+  top: 0;
   width: 100%;
-  background-color: rgb(236, 109, 27);
+  background-color: orange;
   opacity: .95;
   position: absolute;
-  z-index: 10;
+  z-index: 99;
   /* This trasform moves the drawer off canvas. */
   -webkit-transform: translate(-100%, 0);
   transform: translate(-100%, 0);
@@ -348,10 +354,9 @@ footer .icons img {
 ************************************************/
 main h1,
 main h2,
-.articledate,
 .sidebar h3,
 .slider h2,
-.viewmore-btn { color: #366b82; font-weight: bold;}
+.viewmore-btn { color: #0B4E98; font-weight: bold;}
 
 
 
@@ -501,7 +506,7 @@ main h2,
 }
 
 .iw_title {
-  background: #366b82;
+  background: #0B4E98;
   color: white;
   text-align: center;
 }
@@ -546,7 +551,7 @@ main h2,
 .nav-list li {
   width: 33%;
   padding: 1em;
-  background-color: #366b82;
+  background-color: #0B4E98;
   border: 1px solid white;
 }
 
@@ -704,7 +709,7 @@ main.search-result {
   padding: .85rem 2.7rem; /* 2.7rem is required on the right hand side so it won't collapse with the delete button*/
   margin-bottom: 1rem;
   margin-right: 1rem;
-  border: 1px solid #366b82;
+  border: 1px solid #0B4E98;
 }
 
 .result-info .delete-btn {
@@ -732,7 +737,7 @@ main.search-result {
 }
 
 .contact li a {
-  color: #366b82;
+  color: #0B4E98;
 }
 
 .links li {
@@ -759,9 +764,13 @@ main.search-result {
 
 ===============================================*/
 
+.branch-header {
+  padding: 30px;
+}
+
 .branch-header .logo {
   width: 30%;
-  max-width: 150px;
+  max-width: 200px;
 }
 
 .branch-header {
@@ -793,6 +802,14 @@ form select{
   background: orange;
   color: black;
   padding: .9rem;
+  margin-bottom: 0;
+}
+
+.branch-middle .overflowAuto {
+  margin-top: 0;
+  padding: 15px;
+  height: 300px;
+  background: rgba(152, 156, 157, 0.36);
 }
 
 .branch-personnel li {
@@ -829,7 +846,7 @@ li div {
   display: inline-block;
   height: 1.4rem;
   width: 1.4rem;
-  background: #366b82;
+  background: #0B4E98;
   margin-right: 10px;
   vertical-align: middle;
 }
@@ -841,7 +858,7 @@ li div {
 .centered { text-align: center;}
 
 /* 被选择的菜单文字 */
-li.text_selected { border-bottom: 0; background:  #366b82;  }
+li.text_selected { border-bottom: 0; background:  #0B4E98;  }
 .text_selected a { color: white; }
 
 
@@ -856,4 +873,8 @@ li.text_selected { border-bottom: 0; background:  #366b82;  }
 	width: 90%;
 	height: 500px;
 	margin: auto;
+}
+
+.overflowAuto {
+  overflow:auto;
 }
