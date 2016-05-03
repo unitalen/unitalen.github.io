@@ -763,7 +763,19 @@ main.search-result {
             分所页面专用
 
 ===============================================*/
+.branch-top { min-height: 70px; }
 
+.branch-top ul {
+  padding-right: 3.5rem;
+}
+
+.branch-top li {
+  margin-right: 1.5rem;
+}
+
+.branch-top li a {
+  color: white;
+}
 .branch-header {
   padding: 30px;
 }
@@ -775,6 +787,11 @@ main.search-result {
 
 .branch-header {
   text-align: center;
+}
+
+.branch-header ul:last-of-type {
+  padding: 1.5rem 0;
+
 }
 
 .branch-header h1 {
@@ -791,14 +808,16 @@ main.search-result {
   margin-right: 10px;
 }
 
+.branch-header li a {
+  font-size: 1.5rem;
+}
+
 form select{
   background: inherit;
   border: 1px solid rgba(22, 111, 130, 0.92);
 }
 
 .branch-middle h2 {
-  border-top: 10px double black;
-  border-bottom: 1px solid black;
   background: orange;
   color: black;
   padding: .9rem;
@@ -809,7 +828,7 @@ form select{
   margin-top: 0;
   padding: 15px;
   height: 300px;
-  background: rgba(152, 156, 157, 0.36);
+  background: rgba(202, 216, 219, 0.36);
 }
 
 .branch-personnel li {
